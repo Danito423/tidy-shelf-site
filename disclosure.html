@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &amp; Disclosure — The Tidy Shelf</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;560;620;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">The Tidy <span>Shelf</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+    <nav class="primary-nav">
+      <ul id="primary-menu">
+        <li><a href="index.html#shelf">Shop by Room</a></li>
+        <li><a href="index.html#picks">Featured Picks</a></li>
+        <li><a href="index.html#blog">Guides</a></li>
+        <li><a href="disclosure.html">About &amp; Disclosure</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="simple-page">
+  <div class="wrap">
+    <h1>About &amp; Disclosure</h1>
+    <p>The Tidy Shelf covers home organization and kitchen products for small and rented spaces. Every pick is chosen on its own merits — no brand paid for placement.</p>
+
+    <h2>Affiliate disclosure</h2>
+    <p>As an Amazon Associate, this site earns from qualifying purchases. When you click a product link and buy something on Amazon, we may earn a small commission at no extra cost to you. This is how the site supports itself, and it never affects which products we recommend.</p>
+
+    <h2>Editorial policy</h2>
+    <p>Replace this section with how you actually pick products — for example, whether you buy items yourself, how long you test them, and what would make you remove a pick later.</p>
+
+    <h2>Contact</h2>
+    <p>Replace with your contact email or a contact form link.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p class="disclosure-note">As an Amazon Associate, this site earns from qualifying purchases. Product picks are chosen independently.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html#shelf">Shop by Room</a></li>
+        <li><a href="index.html#picks">Featured Picks</a></li>
+        <li><a href="index.html#blog">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul>
+        <li><a href="https://pinterest.com/" target="_blank" rel="noopener">Pinterest</a></li>
+        <li><a href="disclosure.html">Disclosure</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('primary-menu');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  }
+</script>
+</body>
+</html>
